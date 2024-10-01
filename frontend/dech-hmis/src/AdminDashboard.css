@@ -1,0 +1,143 @@
+/* Admin Dashboard Container */
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Header Styling */
+  .admin-dashboard header {
+    width: 100%;
+    background-color: #3a3dbe; /* Match the color of the navigation menu */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation Menu */
+  .admin-dashboard nav {
+    width: 100%;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation List */
+  .admin-dashboard nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 30px; /* Space between menu items */
+  }
+  
+  /* Navigation List Items */
+  .admin-dashboard nav ul li {
+    position: relative;
+  }
+  
+  .admin-dashboard nav ul li a {
+    text-decoration: none;
+    color: #3a3dbe; /* Set the same color for all menu items */
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .admin-dashboard nav ul li a:hover {
+    color: #1a1a1a; /* Change color on hover */
+  }
+  
+  /* Dropdown Menu */
+  .admin-dashboard .dropdown {
+    cursor: pointer;
+  }
+  
+  .admin-dashboard .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .admin-dashboard .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 100%; /* Positioned below the parent menu */
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .admin-dashboard .dropdown-menu li {
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  
+  .admin-dashboard .dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .admin-dashboard .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+    color: #3a3dbe;
+  }
+  
+  /* Dashboard Content */
+  .dashboard-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .dashboard-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .dashboard-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-dashboard nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px; /* Reduce gap for mobile screens */
+    }
+  
+    .admin-dashboard nav ul li {
+      width: 100%;
+    }
+  
+    .admin-dashboard nav ul li a {
+      width: 100%;
+      text-align: left;
+      padding: 15px 10px;
+    }
+  
+    .dashboard-content {
+      padding: 15px;
+    }
+  }
+  

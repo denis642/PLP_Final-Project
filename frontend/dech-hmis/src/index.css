@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0; /* Add this to remove padding */
+  box-sizing: border-box; /* Prevent elements from overflowing */
+  font-family: "Quicksand";
+  color: #f09090;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* This prevents any horizontal scrolling */
+  margin: 0;
+    padding: 0;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Use full width of the viewport */
+  border-bottom: 1px solid #f2f2f2;
+  box-sizing: border-box;
+}
+
+.navbar h1 {
+  color: #f1356d;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color: #f1356d;
+}
+
+.content {
+  width: 100%; /* Use full width of the viewport */
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px; /* Optional, to control the max width while keeping responsiveness */
+}
+
+
+/* Login container style */
+.login-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Login box style */
+.login-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid #f09090;
+}
+
+/* Hover effect on the login box */
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Login button style */
+.login-btn {
+  display: inline-block;
+  background-color: #f1356d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+/* Style for links in the login box */
+.login-box a {
+  color: #f1356d;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+/* Register form container */
+.register-form-container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Input field styles */
+.register-form-container input,
+.register-form-container select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button style */
+.register-btn {
+  padding: 10px 20px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: #d12f5b;
+}
+
+.register-doctor {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.register-doctor h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#d12f5b;
+}
+
+.register-admin {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.register-admin h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color:#f1356d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d12f5b;
+}
+
+.patient-login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.patient-login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.patient-login p {
+  text-align: center;
+  margin-top: 20px;
+}
+.patient-login a {
+  color: #007bff;
+  text-decoration: none;
+}
+.patient-login a:hover {
+  text-decoration: underline;
+}
+
+.doctor-login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.doctor-login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Container for the login form */
+.admin-login {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading for the login form */
+.admin-login h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Styling for form elements */
+.admin-login .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Label styling */
+.admin-login label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input field styling */
+.admin-login input[type="text"],
+.admin-login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Button styling */
+.admin-login button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f1356d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.admin-login button:hover {
+  background-color: #d12e58;
+}
+
+/* Link to the registration page */
+.admin-login p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.admin-login p a {
+  color: #f1356d;
+  text-decoration: none;
+}
+
+/* Link hover effect */
+.admin-login p a:hover {
+  text-decoration: underline;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard-menu {
+  margin-bottom: 20px;
+}
+
+.dashboard-menu button {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dashboard-menu button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* AvailableDoctors.css */
+.table-container {
+  padding: 20px;
+}
+
+.table-header {
+  background-color: #45a049;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+

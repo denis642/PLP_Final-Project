@@ -1,0 +1,33 @@
+/* Footer.css */
+.footer {
+    background-color: #3a3dbe; /* Your desired footer color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative; /* Set to relative to follow normal document flow */
+    margin-top: 20px; /* Add space above the footer if needed */
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
